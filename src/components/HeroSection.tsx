@@ -32,8 +32,8 @@ const HeroSection = () => {
       {/* Stars and shooting stars */}
       <StarsBackground starDensity={0.0001} className="opacity-50" />
       <ShootingStars 
-        minDelay={2000} 
-        maxDelay={8000}
+        minDelay={800} // Reduced from 2000 to increase frequency by ~40%
+        maxDelay={5000} // Reduced from 8000 to increase frequency by ~40%
         starColor="#94D058"
         trailColor="#94D058"
       />
