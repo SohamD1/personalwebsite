@@ -19,12 +19,21 @@ const HeroSection = () => {
       id="home" 
       className="min-h-screen flex flex-col justify-center relative overflow-hidden"
     >
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-t from-portfolio-black via-transparent to-transparent"></div>
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')] bg-cover bg-center opacity-10"></div>
+      {/* Background geometric elements */}
+      <div className="absolute inset-0 bg-portfolio-black"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-b from-portfolio-green/20 to-transparent opacity-20 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/4 bg-gradient-to-t from-portfolio-green/15 to-transparent opacity-20 blur-3xl"></div>
       
-      {/* Green accent line on the left */}
-      <div className="absolute left-0 top-1/4 bottom-1/4 w-1 bg-portfolio-green opacity-60"></div>
+      {/* Geometric accent lines */}
+      <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-green/60"></div>
+      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-green/30"></div>
+      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-green/30"></div>
+      
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'linear-gradient(#333 1px, transparent 1px), linear-gradient(to right, #333 1px, transparent 1px)',
+        backgroundSize: '40px 40px'
+      }}></div>
       
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto">

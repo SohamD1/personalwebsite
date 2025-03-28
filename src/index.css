@@ -17,7 +17,7 @@
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 142 100% 75%;
+    --primary: 90 56% 58%;
     --primary-foreground: 0 0% 9%;
 
     --secondary: 180 2% 20%;
@@ -26,7 +26,7 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 142 100% 75%;
+    --accent: 90 56% 58%;
     --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84% 60%;
@@ -34,7 +34,7 @@
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 142 100% 75%;
+    --ring: 90 56% 58%;
 
     --radius: 0.5rem;
   }
@@ -75,7 +75,7 @@
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(127,255,127,0.3)] hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(148,208,88,0.3)] hover:-translate-y-1;
   }
   
   .nav-link {

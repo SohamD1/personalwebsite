@@ -55,8 +55,8 @@ export default {
         },
         portfolio: {
           black: "#0F0F0F",
-          green: "#7FFF7F",
-          "green-dark": "#5FBF5F",
+          green: "#94D058",
+          "green-dark": "#79AB48",
           "gray-light": "#F0F0F0",
           "gray-dark": "#333333",
         },
