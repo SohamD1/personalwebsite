@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Code, Briefcase, Eye, FileText } from 'lucide-react';
 

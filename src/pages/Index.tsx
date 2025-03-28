@@ -7,11 +7,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
-import { useInView } from 'react-intersection-observer';
 import { useToast } from '@/hooks/use-toast';
-
-// Add this dependency for intersection observer
-<lov-add-dependency>react-intersection-observer@9.7.0</lov-add-dependency>
 
 const Index = () => {
   const { toast } = useToast();

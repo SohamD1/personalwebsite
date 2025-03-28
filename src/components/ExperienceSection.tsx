@@ -1,6 +1,7 @@
-
 import React from 'react';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { useInView } from 'react-intersection-observer';
+import { Badge } from "@/components/ui/badge";
 import { Briefcase } from 'lucide-react';
 
 const experiences = [

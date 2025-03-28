@@ -1,7 +1,8 @@
-
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from "@/components/ui/button";
 import { useInView } from 'react-intersection-observer';
-import { Mail, GitHub, Linkedin, MapPin, Phone } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const { ref, inView } = useInView({
@@ -55,7 +56,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="bg-secondary hover:bg-muted w-10 h-10 rounded-full flex items-center justify-center transition-colors"
                   >
-                    <GitHub size={20} className="text-portfolio-green" />
+                    <Github size={20} className="text-portfolio-green" />
                   </a>
                   <a 
                     href="https://linkedin.com" 
