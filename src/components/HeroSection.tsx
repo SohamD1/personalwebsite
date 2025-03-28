@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
-import Spotlight from './effects/Spotlight';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,14 +22,10 @@ const HeroSection = () => {
       {/* Background color */}
       <div className="absolute inset-0 bg-portfolio-black"></div>
       
-      {/* Spotlight effects */}
-      <Spotlight position="top-right" color="#A5D8FF" size="lg" />
-      <Spotlight position="bottom-left" color="#A5D8FF" size="md" />
-      
       {/* Geometric accent lines */}
-      <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-blue/60"></div>
-      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-blue/30"></div>
-      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-blue/30"></div>
+      <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-red/60"></div>
+      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-red/30"></div>
+      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-red/30"></div>
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5" style={{
@@ -47,7 +42,7 @@ const HeroSection = () => {
             
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
               <span className="block">Frontend Developer & UX Designer</span>
-              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Building digital experiences</span>
+              <span className="inline-block mt-2 border-b-2 border-portfolio-red pb-1">Building digital experiences</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">

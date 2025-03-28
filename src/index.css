@@ -17,7 +17,7 @@
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 203 100% 82%;
+    --primary: 0 100% 65%; /* Updated to red tone */
     --primary-foreground: 0 0% 0%;
 
     --secondary: 200 20% 15%;
@@ -26,7 +26,7 @@
     --muted: 0 0% 8%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 203 100% 82%;
+    --accent: 0 100% 65%; /* Updated to red tone */
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
@@ -34,7 +34,7 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 203 100% 82%;
+    --ring: 0 100% 65%; /* Updated to red tone */
 
     --radius: 0.5rem;
   }
@@ -63,23 +63,23 @@
   }
   
   .heading-highlight {
-    @apply text-portfolio-blue;
+    @apply text-portfolio-red;
   }
   
   .btn-primary {
-    @apply bg-portfolio-blue hover:bg-portfolio-blue-dark text-portfolio-black font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+    @apply bg-portfolio-red hover:bg-portfolio-red-dark text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
   }
   
   .btn-outline {
-    @apply border-2 border-portfolio-blue hover:bg-portfolio-blue/10 text-portfolio-blue font-medium py-3 px-6 rounded-md transition-all duration-300;
+    @apply border-2 border-portfolio-red hover:bg-portfolio-red/10 text-portfolio-red font-medium py-3 px-6 rounded-md transition-all duration-300;
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(165,216,255,0.3)] hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,77,77,0.3)] hover:-translate-y-1;
   }
   
   .nav-link {
-    @apply relative text-gray-400 hover:text-white py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-blue after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative text-gray-400 hover:text-white py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-red after:transition-all after:duration-300 hover:after:w-full;
   }
   
   .nav-link.active {

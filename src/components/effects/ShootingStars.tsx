@@ -45,10 +45,10 @@ const getRandomStartPoint = () => {
 export const ShootingStars: React.FC<ShootingStarsProps> = ({
   minSpeed = 10,
   maxSpeed = 30,
-  minDelay = 1200,
-  maxDelay = 4200,
-  starColor = "#A5D8FF",
-  trailColor = "#A5D8FF",
+  minDelay = 500, // Reduced from 1200 to 500 for more frequent stars
+  maxDelay = 2000, // Reduced from 4200 to 2000 for more frequent stars
+  starColor = "#ff4d4d", // Updated to red
+  trailColor = "#ff4d4d", // Updated to red
   starWidth = 10,
   starHeight = 1,
   className,
@@ -56,15 +56,14 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   const [stars, setStars] = useState<ShootingStar[]>([]);
   const svgRef = useRef<SVGSVGElement>(null);
   
-  // Reduce delay by ~40% to increase frequency
-  const adjustedMinDelay = Math.floor(minDelay * 0.6);
-  const adjustedMaxDelay = Math.floor(maxDelay * 0.6);
+  // Create more stars by having multiple active star generators
+  const numGenerators = 2; // Run 2 star generators simultaneously
 
   useEffect(() => {
-    const createStar = () => {
+    const createStar = (generatorId: number) => {
       const { x, y, angle } = getRandomStartPoint();
       const newStar: ShootingStar = {
-        id: Date.now(),
+        id: Date.now() + generatorId,
         x,
         y,
         angle,
@@ -75,14 +74,18 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
       
       setStars(prev => [...prev, newStar]);
 
-      const randomDelay = Math.random() * (adjustedMaxDelay - adjustedMinDelay) + adjustedMinDelay;
-      setTimeout(createStar, randomDelay);
+      const randomDelay = Math.random() * (maxDelay - minDelay) + minDelay;
+      setTimeout(() => createStar(generatorId), randomDelay);
     };
 
-    createStar();
+    // Start multiple star generators
+    for (let i = 0; i < numGenerators; i++) {
+      // Stagger the start of each generator
+      setTimeout(() => createStar(i), i * 200);
+    }
 
     return () => {};
-  }, [minSpeed, maxSpeed, adjustedMinDelay, adjustedMaxDelay]);
+  }, [minSpeed, maxSpeed, minDelay, maxDelay]);
 
   useEffect(() => {
     const moveStar = () => {

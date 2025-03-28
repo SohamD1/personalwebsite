@@ -57,6 +57,8 @@ export default {
           black: "#000000",
           blue: "#A5D8FF", // Baby blue color
           "blue-dark": "#7FB8E0", // Darker baby blue for hover states
+          red: "#ff4d4d", // New red accent color
+          "red-dark": "#e62e2e", // Darker red for hover states
           "gray-light": "#F0F0F0",
           "gray-dark": "#333333",
         },
