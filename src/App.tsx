@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ShootingStars from "./components/effects/ShootingStars";
 import { StarsBackground } from "./components/effects/StarsBackground";
+import { SparklingStars } from "./components/effects/SparklingStars";
 
 const queryClient = new QueryClient();
 
@@ -17,14 +18,15 @@ const App = () => (
       <div className="relative min-h-screen overflow-hidden">
         {/* Global background effects */}
         <div className="fixed inset-0 z-0 pointer-events-none">
-          <StarsBackground starDensity={0.0003} className="z-0" /> {/* Increased star density */}
+          <StarsBackground starDensity={0.0005} className="z-0" /> 
           <ShootingStars 
-            minDelay={500}
-            maxDelay={2000}
-            starColor="#ff4d4d"
-            trailColor="#ff4d4d"
+            minDelay={300}
+            maxDelay={1000}
+            starColor="#ff7a7a"
+            trailColor="#ff7a7a"
             className="z-0"
           />
+          <SparklingStars count={70} className="z-0" />
         </div>
         
         <Toaster />

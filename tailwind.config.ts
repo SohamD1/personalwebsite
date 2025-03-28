@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,8 +56,8 @@ export default {
           black: "#000000",
           blue: "#A5D8FF", // Baby blue color
           "blue-dark": "#7FB8E0", // Darker baby blue for hover states
-          red: "#ff4d4d", // New red accent color
-          "red-dark": "#e62e2e", // Darker red for hover states
+          red: "#ff7a7a", // Softer red accent color (updated)
+          "red-dark": "#ff5c5c", // Softer darker red for hover states (updated)
           "gray-light": "#F0F0F0",
           "gray-dark": "#333333",
         },
@@ -101,6 +100,14 @@ export default {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.8" },
         },
+        "sparkle": {
+          "0%, 100%": { opacity: "0", transform: "scale(0.2)" },
+          "50%": { opacity: "1", transform: "scale(1)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -110,6 +117,10 @@ export default {
         "slide-up": "slide-up 0.7s ease-out",
         "slide-in-right": "slide-in-right 0.5s ease-out",
         "pulse-slow": "pulse-slow 3s infinite",
+        "sparkle-slow": "sparkle 3s infinite",
+        "sparkle-medium": "sparkle 5s infinite",
+        "sparkle-fast": "sparkle 2s infinite",
+        "float-slow": "float 8s ease-in-out infinite",
       },
     },
   },

@@ -42,7 +42,7 @@ const HeroSection = () => {
             
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
               <span className="block">Frontend Developer & UX Designer</span>
-              <span className="inline-block mt-2 border-b-2 border-portfolio-red pb-1">Building digital experiences</span>
+              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Building digital experiences</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">

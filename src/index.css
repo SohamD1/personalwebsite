@@ -17,7 +17,7 @@
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 100% 65%; /* Updated to red tone */
+    --primary: 0 0% 98%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 200 20% 15%;
@@ -26,7 +26,7 @@
     --muted: 0 0% 8%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 0 100% 65%; /* Updated to red tone */
+    --accent: 0 85% 73%; /* Softer red tone */
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
@@ -34,7 +34,7 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 0 100% 65%; /* Updated to red tone */
+    --ring: 0 85% 73%; /* Softer red tone */
 
     --radius: 0.5rem;
   }
@@ -75,11 +75,11 @@
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,77,77,0.3)] hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,122,122,0.3)] hover:-translate-y-1;
   }
   
   .nav-link {
-    @apply relative text-gray-400 hover:text-white py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-red after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative text-gray-400 hover:text-white py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-portfolio-blue after:transition-all after:duration-300 hover:after:w-full;
   }
   
   .nav-link.active {
