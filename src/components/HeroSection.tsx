@@ -1,6 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import ShootingStars from './effects/ShootingStars';
+import { StarsBackground } from './effects/StarsBackground';
+import Spotlight from './effects/Spotlight';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,10 +22,21 @@ const HeroSection = () => {
       id="home" 
       className="min-h-screen flex flex-col justify-center relative overflow-hidden"
     >
-      {/* Background geometric elements */}
+      {/* Background color */}
       <div className="absolute inset-0 bg-portfolio-black"></div>
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-b from-portfolio-green/20 to-transparent opacity-20 blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/4 bg-gradient-to-t from-portfolio-green/15 to-transparent opacity-20 blur-3xl"></div>
+      
+      {/* Spotlight effects */}
+      <Spotlight position="top-right" color="#94D058" size="lg" />
+      <Spotlight position="bottom-left" color="#94D058" size="md" />
+      
+      {/* Stars and shooting stars */}
+      <StarsBackground starDensity={0.0001} className="opacity-50" />
+      <ShootingStars 
+        minDelay={2000} 
+        maxDelay={8000}
+        starColor="#94D058"
+        trailColor="#94D058"
+      />
       
       {/* Geometric accent lines */}
       <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-green/60"></div>
