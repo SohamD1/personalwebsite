@@ -76,14 +76,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-60">
-        <span className="text-sm mb-2 text-gray-400">Scroll Down</span>
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center p-1">
-          <div className="w-1 h-2 bg-gray-400 rounded-full animate-bounce mt-1"></div>
-        </div>
-      </div>
     </section>
   );
 };
