@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView } from 'react-intersection-observer';
@@ -11,7 +12,7 @@ const ContactSection = () => {
   });
 
   return (
-    <section id="contact" className="py-20 bg-muted">
+    <section id="contact" className="py-20">
       <div className="section-container">
         <h2 className="section-title">Get In <span className="heading-highlight">Touch</span></h2>
         
@@ -31,13 +32,13 @@ const ContactSection = () => {
               
               <div className="space-y-6">
                 <ContactItem icon={<Mail size={20} />} title="Email">
-                  <a href="mailto:your.email@example.com" className="text-portfolio-green hover:underline">
+                  <a href="mailto:your.email@example.com" className="text-portfolio-blue hover:underline">
                     your.email@example.com
                   </a>
                 </ContactItem>
                 
                 <ContactItem icon={<Phone size={20} />} title="Phone">
-                  <a href="tel:+1234567890" className="text-portfolio-green hover:underline">
+                  <a href="tel:+1234567890" className="text-portfolio-blue hover:underline">
                     +1 (234) 567-890
                   </a>
                 </ContactItem>
@@ -56,7 +57,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="bg-secondary hover:bg-muted w-10 h-10 rounded-full flex items-center justify-center transition-colors"
                   >
-                    <Github size={20} className="text-portfolio-green" />
+                    <Github size={20} className="text-portfolio-blue" />
                   </a>
                   <a 
                     href="https://linkedin.com" 
@@ -64,7 +65,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="bg-secondary hover:bg-muted w-10 h-10 rounded-full flex items-center justify-center transition-colors"
                   >
-                    <Linkedin size={20} className="text-portfolio-green" />
+                    <Linkedin size={20} className="text-portfolio-blue" />
                   </a>
                 </div>
               </div>
@@ -81,7 +82,7 @@ const ContactSection = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-green/50"
+                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50"
                     placeholder="Your name"
                   />
                 </div>
@@ -94,7 +95,7 @@ const ContactSection = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-green/50"
+                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50"
                     placeholder="Your email"
                   />
                 </div>
@@ -107,7 +108,7 @@ const ContactSection = () => {
                     type="text"
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-green/50"
+                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50"
                     placeholder="Subject"
                   />
                 </div>
@@ -120,7 +121,7 @@ const ContactSection = () => {
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-green/50 resize-none"
+                    className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50 resize-none"
                     placeholder="Your message"
                   ></textarea>
                 </div>
@@ -148,7 +149,7 @@ type ContactItemProps = {
 
 const ContactItem = ({ icon, title, children }: ContactItemProps) => (
   <div className="flex items-start">
-    <div className="mr-4 bg-secondary p-2 rounded-full text-portfolio-green">
+    <div className="mr-4 bg-secondary p-2 rounded-full text-portfolio-blue">
       {icon}
     </div>
     <div>

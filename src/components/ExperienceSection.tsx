@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { useInView } from 'react-intersection-observer';
@@ -50,7 +51,7 @@ const ExperienceSection = () => {
   });
 
   return (
-    <section id="experience" className="py-20 bg-muted">
+    <section id="experience" className="py-20">
       <div className="section-container">
         <h2 className="section-title">Work <span className="heading-highlight">Experience</span></h2>
         
@@ -62,7 +63,7 @@ const ExperienceSection = () => {
         >
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-portfolio-green/30"></div>
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-portfolio-blue/30"></div>
             
             {/* Experience items */}
             {experiences.map((exp, index) => (
@@ -111,7 +112,7 @@ const TimelineItem = ({ role, company, period, description, highlights, isEven, 
       }}
     >
       {/* Timeline node */}
-      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-portfolio-green rounded-full flex items-center justify-center z-10">
+      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-portfolio-blue rounded-full flex items-center justify-center z-10">
         <Briefcase size={20} className="text-portfolio-black" />
       </div>
       
@@ -130,7 +131,7 @@ const TimelineItem = ({ role, company, period, description, highlights, isEven, 
         }`}
       >
         <div className="bg-card p-6 rounded-lg shadow-md card-hover">
-          <div className="text-sm text-portfolio-green font-medium mb-1">
+          <div className="text-sm text-portfolio-blue font-medium mb-1">
             {period}
           </div>
           <h3 className="text-xl font-bold mb-1">{role}</h3>
@@ -139,11 +140,11 @@ const TimelineItem = ({ role, company, period, description, highlights, isEven, 
             {description}
           </p>
           <div>
-            <h5 className="text-sm font-medium mb-2 text-portfolio-green">Key Achievements:</h5>
+            <h5 className="text-sm font-medium mb-2 text-portfolio-blue">Key Achievements:</h5>
             <ul className="text-sm text-gray-400 space-y-1">
               {highlights.map((highlight, i) => (
                 <li key={i} className="flex items-start">
-                  <span className="text-portfolio-green mr-2">•</span>
+                  <span className="text-portfolio-blue mr-2">•</span>
                   <span>{highlight}</span>
                 </li>
               ))}

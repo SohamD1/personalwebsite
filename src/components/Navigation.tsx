@@ -53,7 +53,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <a 
               href="#home" 
-              className="text-portfolio-green text-xl font-bold font-poppins tracking-wide"
+              className="text-portfolio-blue text-xl font-bold font-poppins tracking-wide"
               onClick={(e) => {
                 e.preventDefault();
                 handleNavClick('home');
@@ -100,7 +100,7 @@ const Navigation = () => {
                 href={`#${item.toLowerCase()}`}
                 className={`block py-3 px-2 text-base font-medium ${
                   activeSection === item.toLowerCase()
-                    ? 'text-portfolio-green'
+                    ? 'text-portfolio-blue'
                     : 'text-gray-400 hover:text-white'
                 }`}
                 onClick={(e) => {

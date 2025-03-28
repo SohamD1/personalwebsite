@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ShootingStars from "./components/effects/ShootingStars";
+import { StarsBackground } from "./components/effects/StarsBackground";
 
 const queryClient = new QueryClient();
 
@@ -16,11 +17,12 @@ const App = () => (
       <div className="relative min-h-screen overflow-hidden">
         {/* Global background effects */}
         <div className="fixed inset-0 z-0 pointer-events-none">
+          <StarsBackground starDensity={0.0002} className="z-0" />
           <ShootingStars 
             minDelay={800}
             maxDelay={5000}
-            starColor="#94D058"
-            trailColor="#94D058"
+            starColor="#A5D8FF"
+            trailColor="#A5D8FF"
             className="z-0"
           />
         </div>

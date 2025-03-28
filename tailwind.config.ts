@@ -54,9 +54,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         portfolio: {
-          black: "#0F0F0F",
-          green: "#94D058",
-          "green-dark": "#79AB48",
+          black: "#000000",
+          blue: "#A5D8FF", // Baby blue color
+          "blue-dark": "#7FB8E0", // Darker baby blue for hover states
           "gray-light": "#F0F0F0",
           "gray-dark": "#333333",
         },

@@ -1,8 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
-import ShootingStars from './effects/ShootingStars';
-import { StarsBackground } from './effects/StarsBackground';
 import Spotlight from './effects/Spotlight';
 
 const HeroSection = () => {
@@ -26,22 +24,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-portfolio-black"></div>
       
       {/* Spotlight effects */}
-      <Spotlight position="top-right" color="#94D058" size="lg" />
-      <Spotlight position="bottom-left" color="#94D058" size="md" />
-      
-      {/* Stars and shooting stars */}
-      <StarsBackground starDensity={0.0001} className="opacity-50" />
-      <ShootingStars 
-        minDelay={800} // Reduced from 2000 to increase frequency by ~40%
-        maxDelay={5000} // Reduced from 8000 to increase frequency by ~40%
-        starColor="#94D058"
-        trailColor="#94D058"
-      />
+      <Spotlight position="top-right" color="#A5D8FF" size="lg" />
+      <Spotlight position="bottom-left" color="#A5D8FF" size="md" />
       
       {/* Geometric accent lines */}
-      <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-green/60"></div>
-      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-green/30"></div>
-      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-green/30"></div>
+      <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-blue/60"></div>
+      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-blue/30"></div>
+      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-blue/30"></div>
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5" style={{
@@ -58,7 +47,7 @@ const HeroSection = () => {
             
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
               <span className="block">Frontend Developer & UX Designer</span>
-              <span className="inline-block mt-2 border-b-2 border-portfolio-green pb-1">Building digital experiences</span>
+              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Building digital experiences</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">
