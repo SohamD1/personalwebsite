@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,9 +37,17 @@ const HeroSection = () => {
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto">
           <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Hi, I'm <span className="heading-highlight">Your Name</span>
-            </h1>
+            <div className="flex items-center mb-6">
+              {/* Profile Photo Avatar with hover spin animation */}
+              <Avatar className="h-16 w-16 mr-4 transition-all duration-500 hover:rotate-[360deg] border-2 border-portfolio-red shadow-lg">
+                <AvatarImage src="/placeholder.svg" alt="Profile Photo" />
+                <AvatarFallback className="bg-portfolio-red text-white text-xl">YN</AvatarFallback>
+              </Avatar>
+              
+              <h1 className="text-4xl md:text-6xl font-bold">
+                Hi, I'm <span className="heading-highlight">Your Name</span>
+              </h1>
+            </div>
             
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
               <span className="block">Frontend Developer & UX Designer</span>
