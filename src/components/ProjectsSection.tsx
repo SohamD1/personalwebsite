@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { useInView } from 'react-intersection-observer';
 import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
@@ -69,6 +70,7 @@ const projects = [
 const categories = ["All", "Web Application", "Website", "Mobile App"];
 
 const ProjectsSection = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
