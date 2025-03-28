@@ -1,12 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Navigation from '../components/Navigation';
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
+import ExperienceSection from '../components/ExperienceSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
+import { useInView } from 'react-intersection-observer';
+import { useToast } from '@/hooks/use-toast';
+
+// Add this dependency for intersection observer
+<lov-add-dependency>react-intersection-observer@9.7.0</lov-add-dependency>
 
 const Index = () => {
+  const { toast } = useToast();
+  
+  React.useEffect(() => {
+    // Welcome toast when the page loads
+    setTimeout(() => {
+      toast({
+        title: "Welcome to my portfolio!",
+        description: "Feel free to explore my work and get in touch.",
+        duration: 5000,
+      });
+    }, 1500);
+  }, [toast]);
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-portfolio-black text-white">
+      <Navigation />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
