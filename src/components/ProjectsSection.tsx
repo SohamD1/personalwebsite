@@ -30,7 +30,7 @@ const projects = [
     title: "This Website!",
     category: "Website",
     image: "https://i.imgur.com/kHhP3xd.png",
-    description: "A responsive travel blog website with content management system, user authentication, and interactive maps.",
+    description: "A responsive portfolio website with experiences, projects, and a contact form.",
     technologies: ["Next.js", "Tailwind CSS", "Sanity.io", "MapBox"],
     liveLink: "#",
     githubLink: "https://github.com/SohamD1/personalwebsite"
