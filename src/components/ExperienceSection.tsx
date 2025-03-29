@@ -8,15 +8,6 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    role: "Full Stack Developer Intern",
-    company: "Kal - Polymers",
-    period: "May 2025 - Aug. 2025",
-    highlights: [
-      "Incoming Summer 2025"
-    ]
-  },
-  {
-    id: 2,
     role: "Full Stack Engineering Intern",
     company: "Start-Up",
     period: "Dec. 2025 - Present",
@@ -26,7 +17,7 @@ const experiences = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     role: "AI Research Intern",
     company: "Algoverse",
     period: "Oct. 2024 - Present",
@@ -36,7 +27,7 @@ const experiences = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     role: "Data Analyst Intern",
     company: "Liferoll",
     period: "Sept. 2023 - Aug. 2024",
