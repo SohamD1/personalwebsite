@@ -33,16 +33,6 @@ const Footer = () => {
               Home
             </a>
             <a 
-              href="#about"
-              className="text-gray-400 hover:text-white transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              About
-            </a>
-            <a 
               href="#projects"
               className="text-gray-400 hover:text-white transition-colors"
               onClick={(e) => {

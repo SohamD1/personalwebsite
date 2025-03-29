@@ -9,7 +9,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'projects', 'contact'];
+      const sections = ['home', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
       // Check if scrolled past threshold for nav background
@@ -65,7 +65,7 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Experience', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'Experience', 'Projects', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -94,7 +94,7 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-portfolio-black/95 backdrop-blur-md animate-slide-in-right">
           <div className="px-4 pt-2 pb-6 space-y-2">
-            {['Home', 'About', 'Experience', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'Experience', 'Projects', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -23,10 +22,9 @@ const HeroSection = () => {
       {/* Background color */}
       <div className="absolute inset-0 bg-portfolio-black"></div>
       
-      {/* Geometric accent lines */}
+      {/* Bold red lines on both sides */}
       <div className="absolute left-0 top-1/3 bottom-1/3 w-1 bg-portfolio-red/60"></div>
-      <div className="absolute left-8 top-1/4 h-32 w-px bg-portfolio-red/30"></div>
-      <div className="absolute right-8 bottom-1/4 h-32 w-px bg-portfolio-red/30"></div>
+      <div className="absolute right-0 top-1/3 bottom-1/3 w-1 bg-portfolio-red/60"></div>
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5" style={{
@@ -48,22 +46,25 @@ const HeroSection = () => {
                 Hi, I'm <span className="heading-highlight">Soham Dave</span>
               </h1>
             </div>
-            
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
-              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Engineering @ U Waterloo</span>
-            </h2>
+  <span className="relative inline-block mt-2 pb-1">
+    Engineering @ U Waterloo
+    <span className="absolute bottom-0 left-0 h-[2px] bg-portfolio-blue w-0 animate-slide-in"></span>
+  </span>
+</h2>
+
             
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">
-            Blending AI, data, and software engineering to craft high-performance applications with React, TypeScript, and Python
+              Blending AI, data, and software engineering to craft high-performance applications with React, TypeScript, and Python
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="#projects" 
+                href="#experience" 
                 className="btn-primary flex items-center justify-center gap-2 w-full sm:w-auto"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
                 View My Work <ArrowRight size={18} />
