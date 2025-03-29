@@ -40,24 +40,21 @@ const HeroSection = () => {
             <div className="flex items-center mb-6">
               {/* Profile Photo Avatar with hover spin animation */}
               <Avatar className="h-16 w-16 mr-4 transition-all duration-500 hover:rotate-[360deg] border-2 border-portfolio-red shadow-lg">
-                <AvatarImage src="/placeholder.svg" alt="Profile Photo" />
+                <AvatarImage src="/passportphoto.png" alt="Profile Photo" />
                 <AvatarFallback className="bg-portfolio-red text-white text-xl">YN</AvatarFallback>
               </Avatar>
               
               <h1 className="text-4xl md:text-6xl font-bold">
-                Hi, I'm <span className="heading-highlight">Your Name</span>
+                Hi, I'm <span className="heading-highlight">Soham Dave</span>
               </h1>
             </div>
             
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-300">
-              <span className="block">Frontend Developer & UX Designer</span>
-              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Building digital experiences</span>
+              <span className="inline-block mt-2 border-b-2 border-portfolio-blue pb-1">Engineering @ U Waterloo</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">
-              I craft responsive websites where technology meets creativity. 
-              With a strong focus on React and TypeScript, I create innovative solutions
-              that provide real business value.
+            Blending AI, data, and software engineering to craft high-performance applications with React, TypeScript, and Python
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

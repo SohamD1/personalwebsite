@@ -83,7 +83,7 @@ const ContactSection = () => {
                     id="name"
                     name="name"
                     className="w-full px-4 py-2 bg-secondary border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50"
-                    placeholder="Your name"
+                    placeholder="Soham Dave"
                   />
                 </div>
                 

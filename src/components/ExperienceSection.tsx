@@ -8,10 +8,9 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    role: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    period: "2021 - Present",
-    description: "Lead a team of developers to build and maintain multiple React applications. Implemented performance optimizations that improved load times by 40%. Established coding standards and review processes.",
+    role: "Full Stack Developer Intern",
+    company: "Kal - Polymers",
+    period: "May 2025 - Aug. 2025",
     highlights: [
       "Architected and delivered a component library used across 5 products",
       "Reduced bundle size by 30% through code splitting and lazy loading",
@@ -20,10 +19,9 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Frontend Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2018 - 2021",
-    description: "Developed responsive web applications using React, Redux, and TypeScript. Collaborated with UX designers to implement pixel-perfect interfaces. Participated in Agile development processes.",
+    role: "Full Stack Engineering Intern",
+    company: "Start-Up",
+    period: "Dec. 2025 - Present",
     highlights: [
       "Created reusable UI components that improved development velocity",
       "Implemented unit and integration tests, achieving 80% code coverage",
@@ -32,14 +30,22 @@ const experiences = [
   },
   {
     id: 3,
-    role: "Junior Web Developer",
-    company: "Creative Web Agency",
-    period: "2016 - 2018",
-    description: "Built and maintained websites for various clients using HTML, CSS, and JavaScript. Collaborated with designers to translate mockups into functional websites. Optimized sites for speed and SEO.",
+    role: "AI Research Intern",
+    company: "Algoverse",
+    period: "Oct. 2024 - Present",
     highlights: [
       "Developed responsive layouts for 15+ client websites",
       "Implemented SEO best practices resulting in improved rankings",
       "Gained experience with WordPress, PHP, and jQuery"
+    ]
+  },
+  {
+    id: 4,
+    role: "Data Analyst Intern",
+    company: "Liferoll",
+    period: "Sept. 2023 - Aug. 2024",
+    highlights: [
+      "sup"
     ]
   }
 ];
@@ -72,7 +78,6 @@ const ExperienceSection = () => {
                 role={exp.role}
                 company={exp.company}
                 period={exp.period}
-                description={exp.description}
                 highlights={exp.highlights}
                 isEven={index % 2 === 0}
                 delay={index * 0.2}
@@ -89,13 +94,12 @@ type TimelineItemProps = {
   role: string;
   company: string;
   period: string;
-  description: string;
   highlights: string[];
   isEven: boolean;
   delay: number;
 };
 
-const TimelineItem = ({ role, company, period, description, highlights, isEven, delay }: TimelineItemProps) => {
+const TimelineItem = ({ role, company, period, highlights, isEven, delay }: TimelineItemProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -136,9 +140,6 @@ const TimelineItem = ({ role, company, period, description, highlights, isEven, 
           </div>
           <h3 className="text-xl font-bold mb-1">{role}</h3>
           <h4 className="text-gray-400 font-medium mb-3">{company}</h4>
-          <p className="text-gray-300 mb-4">
-            {description}
-          </p>
           <div>
             <h5 className="text-sm font-medium mb-2 text-portfolio-blue">Key Achievements:</h5>
             <ul className="text-sm text-gray-400 space-y-1">

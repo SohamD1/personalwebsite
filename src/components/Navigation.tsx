@@ -59,7 +59,7 @@ const Navigation = () => {
                 handleNavClick('home');
               }}
             >
-              Portfolio
+              Soham's Portfolio
             </a>
           </div>
           

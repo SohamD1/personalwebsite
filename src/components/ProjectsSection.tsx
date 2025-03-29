@@ -7,64 +7,34 @@ import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: "E-commerce Dashboard",
+    title: "PianoWise - AI Hackathon 1st Place ~ $ 500",
     category: "Web Application",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    description: "A comprehensive dashboard for e-commerce stores with analytics, inventory management, and order processing capabilities.",
-    technologies: ["React", "TypeScript", "Redux", "Chart.js"],
-    liveLink: "#",
-    githubLink: "#"
+    image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/330/472/datas/gallery.jpg",
+    description: "GenAI Genesis best accessibility hack. Virtual Piano player with an AI tutor providing personalized feedback. ",
+    technologies: ["React", "TypeScript", "Tensorflow", "Cursor"],
+    liveLink: "https://devpost.com/software/pianowise",
+    githubLink: "https://github.com/Raptors65/pianowise"
   },
   {
     id: 2,
-    title: "Budget Tracker",
+    title: "Tech Debt Tracker CRUD App",
     category: "Web Application",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    description: "A personal finance application that helps users track expenses, set budgets, and visualize spending patterns.",
-    technologies: ["React", "Node.js", "MongoDB", "D3.js"],
-    liveLink: "#",
-    githubLink: "#"
+    image: "https://i.imgur.com/ErE6sWR.png?1",
+    description: "A finance application that helps SaaS companies track expenses, set budgets, and visualize spending patterns.",
+    technologies: ["React", "Node.js", "Express", "lowDB"],
+    liveLink: "https://github.com/sohamd1/tech-debt-tracker",
+    githubLink: "https://github.com/sohamd1/tech-debt-tracker"
   },
   {
     id: 3,
-    title: "Travel Blog",
+    title: "This Website!",
     category: "Website",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "https://i.imgur.com/kHhP3xd.png",
     description: "A responsive travel blog website with content management system, user authentication, and interactive maps.",
     technologies: ["Next.js", "Tailwind CSS", "Sanity.io", "MapBox"],
     liveLink: "#",
-    githubLink: "#"
+    githubLink: "https://github.com/SohamD1/personalwebsite"
   },
-  {
-    id: 4,
-    title: "Task Management System",
-    category: "Web Application",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    description: "A collaborative task management system with real-time updates, notifications, and team performance analytics.",
-    technologies: ["React", "Firebase", "Tailwind CSS", "React DnD"],
-    liveLink: "#",
-    githubLink: "#"
-  },
-  {
-    id: 5,
-    title: "Photography Portfolio",
-    category: "Website",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    description: "A minimalist portfolio website for photographers with image galleries, filtering, and client management.",
-    technologies: ["React", "Framer Motion", "Cloudinary", "GraphQL"],
-    liveLink: "#",
-    githubLink: "#"
-  },
-  {
-    id: 6,
-    title: "Weather App",
-    category: "Mobile App",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-    description: "A weather application with 7-day forecasts, location-based data, and customizable alerts for severe weather conditions.",
-    technologies: ["React Native", "Redux", "OpenWeather API", "Geolocation"],
-    liveLink: "#",
-    githubLink: "#"
-  }
 ];
 
 const categories = ["All", "Web Application", "Website", "Mobile App"];

@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <div className="text-lg font-bold text-portfolio-green font-poppins mb-2">Portfolio</div>
+            <div className="text-lg font-bold text-portfolio-green font-poppins mb-2">Soham's Portfolio</div>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+              &copy; {new Date().getFullYear()} Soham Dave.
             </p>
           </div>
           
