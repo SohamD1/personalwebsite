@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState, useRef } from "react";
 
@@ -88,43 +87,49 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   }, [minSpeed, maxSpeed, minDelay, maxDelay]);
 
   useEffect(() => {
-    const moveStar = () => {
-      if (stars.length > 0) {
-        setStars((prevStars) => {
-          return prevStars.map(star => {
-            const newX =
-              star.x +
-              star.speed * Math.cos((star.angle * Math.PI) / 180);
-            const newY =
-              star.y +
-              star.speed * Math.sin((star.angle * Math.PI) / 180);
-            const newDistance = star.distance + star.speed;
-            const newScale = 1 + newDistance / 100;
-            
-            if (
-              newX < -20 ||
-              newX > window.innerWidth + 20 ||
-              newY < -20 ||
-              newY > window.innerHeight + 20
-            ) {
-              return null;
-            }
-            
-            return {
-              ...star,
-              x: newX,
-              y: newY,
-              distance: newDistance,
-              scale: newScale,
-            };
-          }).filter(Boolean) as ShootingStar[];
-        });
-      }
+    let lastTimestamp = performance.now();
+
+    const moveStar = (timestamp: number) => {
+      const delta = timestamp - lastTimestamp;
+      lastTimestamp = timestamp;
+
+      setStars((prevStars) => {
+        return prevStars.map((star) => {
+          const newX =
+            star.x +
+            (star.speed * Math.cos((star.angle * Math.PI) / 180)) * (delta / 16);
+          const newY =
+            star.y +
+            (star.speed * Math.sin((star.angle * Math.PI) / 180)) * (delta / 16);
+          const newDistance = star.distance + star.speed * (delta / 16);
+          const newScale = 1 + newDistance / 100;
+          
+          if (
+            newX < -20 ||
+            newX > window.innerWidth + 20 ||
+            newY < -20 ||
+            newY > window.innerHeight + 20
+          ) {
+            return null;
+          }
+          
+          return {
+            ...star,
+            x: newX,
+            y: newY,
+            distance: newDistance,
+            scale: newScale,
+          };
+        }).filter(Boolean) as ShootingStar[];
+      });
+
+      requestAnimationFrame(moveStar);
     };
 
-    const animationFrame = requestAnimationFrame(moveStar);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [stars]);
+    const animationFrameId = requestAnimationFrame(moveStar);
+    
+    return () => cancelAnimationFrame(animationFrameId);
+  }, []);
 
   return (
     <svg

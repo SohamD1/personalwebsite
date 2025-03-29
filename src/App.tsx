@@ -22,8 +22,8 @@ const App = () => (
           <ShootingStars 
             minDelay={300}
             maxDelay={1000}
-            starColor="#ff7a7a"
-            trailColor="#ff7a7a"
+            starColor="#ffffff"
+            trailColor="#ffffff"
             className="z-0"
           />
           <SparklingStars count={70} className="z-0" />
