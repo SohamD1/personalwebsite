@@ -37,40 +37,18 @@ const projects = [
   },
 ];
 
-const categories = ["All", "Web Application", "Website", "Mobile App"];
-
 const ProjectsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const filteredProjects = activeCategory === "All" 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
-
   return (
     <section id="projects" className="py-20">
       <div className="section-container">
-        <h2 className="section-title">My <span className="heading-highlight">Projects</span></h2>
-        
-        {/* Project filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map(category => (
-            <button
-              key={category}
-              className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                activeCategory === category 
-                  ? 'bg-portfolio-green text-portfolio-black' 
-                  : 'bg-secondary text-gray-300 hover:bg-muted'
-              }`}
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        <h2 className="section-title">
+          My <span className="heading-highlight">Projects</span>
+        </h2>
         
         {/* Projects grid */}
         <div 
@@ -79,7 +57,7 @@ const ProjectsSection = () => {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard 
               key={project.id}
               title={project.title}
@@ -107,7 +85,15 @@ type ProjectCardProps = {
   delay: number;
 };
 
-const ProjectCard = ({ title, description, image, technologies, liveLink, githubLink, delay }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  technologies,
+  liveLink,
+  githubLink,
+  delay,
+}: ProjectCardProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -116,7 +102,7 @@ const ProjectCard = ({ title, description, image, technologies, liveLink, github
   return (
     <div 
       ref={ref}
-      className={`bg-card rounded-lg overflow-hidden card-hover transition-all duration-700`}
+      className="bg-card rounded-lg overflow-hidden card-hover transition-all duration-700"
       style={{ 
         transitionDelay: `${delay}s`,
         opacity: inView ? 1 : 0,

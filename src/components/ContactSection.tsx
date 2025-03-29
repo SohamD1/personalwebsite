@@ -26,25 +26,18 @@ const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="text-gray-300 mb-8">
-                I'm interested in freelance opportunities – especially ambitious or large projects. 
-                However, if you have other request or question, don't hesitate to contact me.
+              If you have a cool internship opportunity or want to team up for a hackathon, feel free to reach out!
               </p>
               
               <div className="space-y-6">
                 <ContactItem icon={<Mail size={20} />} title="Email">
                   <a href="mailto:your.email@example.com" className="text-portfolio-blue hover:underline">
-                    your.email@example.com
-                  </a>
-                </ContactItem>
-                
-                <ContactItem icon={<Phone size={20} />} title="Phone">
-                  <a href="tel:+1234567890" className="text-portfolio-blue hover:underline">
-                    +1 (234) 567-890
+                    davesoham14@gmail.com
                   </a>
                 </ContactItem>
                 
                 <ContactItem icon={<MapPin size={20} />} title="Location">
-                  <span className="text-gray-300">San Francisco, CA</span>
+                  <span className="text-gray-300">Waterloo, ON</span>
                 </ContactItem>
               </div>
               
@@ -52,7 +45,7 @@ const ContactSection = () => {
                 <h4 className="text-lg font-medium mb-4">Find me on</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/SohamD1" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary hover:bg-muted w-10 h-10 rounded-full flex items-center justify-center transition-colors"
@@ -60,7 +53,7 @@ const ContactSection = () => {
                     <Github size={20} className="text-portfolio-blue" />
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://ca.linkedin.com/in/sohamdave1" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary hover:bg-muted w-10 h-10 rounded-full flex items-center justify-center transition-colors"

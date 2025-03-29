@@ -12,9 +12,7 @@ const experiences = [
     company: "Kal - Polymers",
     period: "May 2025 - Aug. 2025",
     highlights: [
-      "Architected and delivered a component library used across 5 products",
-      "Reduced bundle size by 30% through code splitting and lazy loading",
-      "Mentored junior developers and conducted technical interviews"
+      "Incoming Summer 2025"
     ]
   },
   {
@@ -23,9 +21,8 @@ const experiences = [
     company: "Start-Up",
     period: "Dec. 2025 - Present",
     highlights: [
-      "Created reusable UI components that improved development velocity",
-      "Implemented unit and integration tests, achieving 80% code coverage",
-      "Participated in UX research and design planning sessions"
+      "Developed a dynamic web app using Next.js (frontend) and Node.js (backend) with RESTful APIs and Supabase for secure, real-time data management.",
+      "Optimized scalability by streamlining deployment workflows on AWS and Vercel."
     ]
   },
   {
@@ -34,9 +31,8 @@ const experiences = [
     company: "Algoverse",
     period: "Oct. 2024 - Present",
     highlights: [
-      "Developed responsive layouts for 15+ client websites",
-      "Implemented SEO best practices resulting in improved rankings",
-      "Gained experience with WordPress, PHP, and jQuery"
+      "Developed a Sparse Autoencoder for GPT-2 Small using PyTorch and NumPy.",
+      "Evaluated SAE features across NLP tasks like sentiment analysis and logical reasoning."
     ]
   },
   {
@@ -45,7 +41,8 @@ const experiences = [
     company: "Liferoll",
     period: "Sept. 2023 - Aug. 2024",
     highlights: [
-      "sup"
+      "Designed data-driven solutions that boosted user engagement metrics by 15%.",
+      "Collaborated with cross-functional teams to develop strategies informed by user insights."
     ]
   }
 ];
