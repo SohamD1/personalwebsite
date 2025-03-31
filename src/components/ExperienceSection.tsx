@@ -10,7 +10,7 @@ const experiences = [
     id: 1,
     role: "Full Stack Engineering Intern",
     company: "Start-Up",
-    period: "Dec. 2025 - Present",
+    period: "Dec. 2024 - Present",
     highlights: [
       "Developed a dynamic web app using Next.js (frontend) and Node.js (backend) with RESTful APIs and Supabase for secure, real-time data management.",
       "Optimized scalability by streamlining deployment workflows on AWS and Vercel."
