@@ -30,7 +30,7 @@ const experiences = [
     id: 3,
     role: "Data Analyst Intern",
     company: "Liferoll",
-    period: "Sept. 2023 - Aug. 2024",
+    period: "May 2024 - Aug. 2024",
     highlights: [
       "Designed data-driven solutions that boosted user engagement metrics by 15%.",
       "Collaborated with cross-functional teams to develop strategies informed by user insights."
