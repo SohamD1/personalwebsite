@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     title: "TabHive - Chrome Extension",
     category: "Web Application",
-    image: "https://imgur.com/a/BMFsvrb",
+    image: "https://i.imgur.com/SgC29qg.png",
     description: "TabHive is a productivity-focused Chrome extension that organizes your open tabs by clustering them based on semantic similarity to user-inputted topics",
     technologies: ["TypeScript", "HTML", "Chrome APIs"],
     liveLink: "https://tab-hive.vercel.app/",
