@@ -7,6 +7,16 @@ import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
 const projects = [
   {
     id: 1,
+    title: "TabHive - Chrome Extension",
+    category: "Web Application",
+    image: "/public/tabhivelogo2.png",
+    description: "TabHive is a productivity-focused Chrome extension that organizes your open tabs by clustering them based on semantic similarity to user-inputted topics",
+    technologies: ["TypeScript", "HTML", "Chrome APIs"],
+    liveLink: "https://tab-hive.vercel.app/",
+    githubLink: "https://github.com/sohamd1/tabhive"
+  },
+  {
+    id: 2,
     title: "PianoWise - AI Hackathon 1st Place ~ $ 500",
     category: "Web Application",
     image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/330/472/datas/gallery.jpg",
@@ -14,16 +24,6 @@ const projects = [
     technologies: ["React", "TypeScript", "Tensorflow", "Cursor"],
     liveLink: "https://devpost.com/software/pianowise",
     githubLink: "https://github.com/Raptors65/pianowise"
-  },
-  {
-    id: 2,
-    title: "Tech Debt Tracker CRUD App",
-    category: "Web Application",
-    image: "https://i.imgur.com/ErE6sWR.png?1",
-    description: "A finance application that helps SaaS companies track expenses, set budgets, and visualize spending patterns.",
-    technologies: ["React", "Node.js", "Express", "lowDB"],
-    liveLink: "https://github.com/sohamd1/tech-debt-tracker",
-    githubLink: "https://github.com/sohamd1/tech-debt-tracker"
   },
   {
     id: 3,
@@ -35,6 +35,16 @@ const projects = [
     liveLink: "#",
     githubLink: "https://github.com/SohamD1/personalwebsite"
   },
+  {
+  id: 4,
+  title: "Tech Debt Tracker CRUD App",
+  category: "Web Application",
+  image: "https://i.imgur.com/ErE6sWR.png?1",
+  description: "A finance application that helps SaaS companies track expenses, set budgets, and visualize spending patterns.",
+  technologies: ["React", "Node.js", "Express", "lowDB"],
+  liveLink: "https://github.com/sohamd1/tech-debt-tracker",
+  githubLink: "https://github.com/sohamd1/tech-debt-tracker"
+}
 ];
 
 const ProjectsSection = () => {
