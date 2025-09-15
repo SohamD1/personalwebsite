@@ -7,14 +7,19 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    id: 1,
-    role: "Software Engineering Intern",
-    company: "Kal-Polymers",
-    period: "May. 2025 - Aug. 2025",
-    highlights: [
-      "Incoming Summer 2025"
-    ]
-  },
+  id: 1,
+  role: "Software Engineering Intern",
+  company: "Kal-Polymers",
+  period: "May. 2025 - Aug. 2025",
+  highlights: [
+    "Built production efficiency dashboard in Flask + SQL tracking lbs/hr, boosting machine efficiency by 45%",
+    "Developed quality dashboard comparing lab results vs. customer specs, raising first-pass yield by 30%",
+    "Deployed real-time machine dashboards with JavaScript displayed on plant TVs, giving live visibility on machines",
+    "Built interactive financial reporting dashboards with visual analytics, aiding CFO with decision making",
+    "Created digital training module and defect prevention video, reducing operator error and accelerating onboarding"
+  ]
+}
+,
   {
     id: 2,
     role: "Full Stack Engineering Intern",
